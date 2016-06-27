@@ -11,6 +11,7 @@ class test2
 			System.out.println("The person is eligible to vote ");
 		}
 		
+		
 		else
 		{
 			System.out.println("The person is not eligible to vote ");
