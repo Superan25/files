@@ -1,0 +1,12 @@
+data pst;
+length a $100 m $100;
+z = 'a,b,c,d,e,f,a,a,b,c,d,r,h,t,j,k,l,a,b,c,a,d,d,e,f,r,aa,aa,bb,cc,cc,dd,bb';
+end = count(z, ',') + 1;
+z_dup = z;
+/* do i = 1 to end; */
+m = catx(',',scan(z_dup, 1),m);
+a = Tranwrd(z_dup,scan(z_dup, 1),'');
+z_dup = a;
+y = scan(z_dup, 27);
+/* end; */
+run;
