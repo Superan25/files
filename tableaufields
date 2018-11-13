@@ -1,0 +1,5 @@
+If sum([P100]) <= [Sample - Superstore].[Office Supplies Sales%] THEN 'Office Supplies'
+ELSEIF sum([P100]) >= [Sample - Superstore].[Office Supplies Sales%] and sum([P100]) <= ([Sample - Superstore].[Office Supplies Sales%] + [Sample - Superstore].[Furniture Sales%]) THEN 'Furniture'
+ELSEIF sum([P100]) >= ([Sample - Superstore].[Office Supplies Sales%] + [Sample - Superstore].[Furniture Sales%]) and sum([P100]) <= ([Sample - Superstore].[Office Supplies Sales%] + [Sample - Superstore].[Furniture Sales%] + [Sample - Superstore].[Technology Sales%]) THEN 'Technology'
+END
+---------------------------------------------
