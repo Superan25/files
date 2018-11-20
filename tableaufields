@@ -3,3 +3,6 @@ ELSEIF sum([P100]) >= [Sample - Superstore].[Office Supplies Sales%] and sum([P1
 ELSEIF sum([P100]) >= ([Sample - Superstore].[Office Supplies Sales%] + [Sample - Superstore].[Furniture Sales%]) and sum([P100]) <= ([Sample - Superstore].[Office Supplies Sales%] + [Sample - Superstore].[Furniture Sales%] + [Sample - Superstore].[Technology Sales%]) THEN 'Technology'
 END
 ---------------------------------------------
+Tableau exam URL:
+
+https://onlinehelp.tableau.com/current/pro/desktop/en-us/howto_connect.htm
